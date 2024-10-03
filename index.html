@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solr Employee Search</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .search-box { margin-bottom: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    table, th, td { border: 1px solid black; }
+    th, td { padding: 10px; text-align: left; }
+  </style>
+</head>
+<body>
+  <h1>Employee Search</h1>
+
+  <div class="search-box">
+    <input type="text" id="searchTerm" placeholder="Enter employee name or department...">
+    <button onclick="searchEmployee()">Search</button>
+  </div>
+
+  <table id="resultsTable">
+    <thead>
+      <tr>
+        <th>Employee Name</th>
+        <th>Department</th>
+        <th>Job Title</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody id="resultsBody">
+    </tbody>
+  </table>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
